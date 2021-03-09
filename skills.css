@@ -5,6 +5,13 @@ body{
     height: 100px;
     width: auto;
     margin: 25px;
+    transition: 0.5s;
+    /* transition-delay: 1s; */
+}
+.icon-image:hover{
+    height: 140px;
+    transform: rotate(20deg);
+    
 }
 
 h1{

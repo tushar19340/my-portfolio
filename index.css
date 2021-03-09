@@ -36,4 +36,10 @@ body{
 i{
     font-size: 70px;
     color: white;
+    margin-right: 20px;
+    transition: linear 4.5s;
+}
+i:hover{
+    transform: rotateY(1800deg);
+    color: rgb(255,255 ,0);
 }
