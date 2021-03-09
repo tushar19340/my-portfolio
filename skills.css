@@ -1,0 +1,15 @@
+body{
+    cursor: none;
+}
+.icon-image{
+    height: 100px;
+    width: auto;
+    margin: 25px;
+}
+
+h1{
+    color: #f26b22;
+    font-size: 4rem;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+}

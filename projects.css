@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    cursor: none;
+    
+}
+h1{
+    color: #f26b22;
+    font-size: 4rem;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+}
+.my-card{
+    width: 22%;
+    height: 420px;
+    perspective: 1000px;
+}
+.my-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6; */
+}
+.my-card:hover .my-card-inner{
+    transform: rotateY(180deg);
+}
+.my-card-front, .my-card-back {
+    /* border: 2px solid red; */
+    border-radius: 1rem;
+    background-color: blue  ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.my-card-back{
+    transform: rotateY(180deg);
+}
+.my-card img{
+    max-width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+.my-card-body{
+    padding: 20px;
+}
+.my-card-body p{
+    font-size: 1rem;
+    opacity: 0.7;
+}
+div.my-card-body h3{
+    font-size: 1rem;
+    opacity: 0.7;
+}
+div.my-card-body h2{
+    padding: 10px;
+}
+i{
+    font-size: 70px;
+}
+
+.icon-image{
+    height: 70px;
+    width: auto;
+    margin: 7px;
+}
+
+
+.candistan-light{
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #de0c2a, 0 0 20px #de0c2a, 0 0 25px #de0c2a, 0 0 30px #de0c2a, 0 0 35px #0073e6;
+}
+.colorswitch-light{
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e65d22, 0 0 20px #e65d22, 0 0 25px #e65d22, 0 0 30px #e65d22, 0 0 35px #0073e6;
+}
+.isustain-light{
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #2d612d, 0 0 20px #2d612d, 0 0 25px #2d612d, 0 0 30px #2d612d, 0 0 35px #0073e6;
+}
+.extra-light{
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #50417a, 0 0 20px #50417a, 0 0 25px #50417a, 0 0 30px #50417a, 0 0 35px #0073e6;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .my-card {
+      width: 90%;
+      margin-bottom: 30px;
+    }
+}
+
+
+

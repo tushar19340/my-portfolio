@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    cursor: none;
+}
+
+.container img{
+    height: 400px;
+    width: auto;
+    display: block;
+    margin: auto;
+
+    border-radius: 3px;
+}
+
+.container h3{
+    font-size: 1.5rem;
+    color: white;
+    /* opacity: 0.8; */
+}
+.container h1{
+    font-size: 4.5rem;
+    font-family: 'Acme', sans-serif;
+}
+.container h2{
+    font-size: 1.5rem;
+    color: wheat;
+}
+.container span{
+    color: #94c454;
+    
+}
