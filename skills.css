@@ -13,3 +13,12 @@ h1{
     font-family: 'Acme', sans-serif;
     text-align: center;
 }
+
+@media (max-width: 700px){
+    .icon-image{
+        height: 40px;
+        width: auto;
+        margin: 5px;
+    }
+
+}
