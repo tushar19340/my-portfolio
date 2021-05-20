@@ -30,6 +30,7 @@ h1{
 }
 .my-card:hover .my-card-inner{
     transform: rotateY(180deg);
+    cursor: pointer;
 }
 .my-card-front, .my-card-back {
     /* border: 2px solid red; */
