@@ -51,7 +51,7 @@ class Particle {
     let my = [];
 
     function setup() {
-        var canvas = createCanvas(windowWidth, windowHeight);
+        var canvas = createCanvas(windowWidth, windowHeight + 100);
         canvas.position(0, 0);
         canvas.style('z-index', '-1');
         for(let i = 0;i<width/10;i++){

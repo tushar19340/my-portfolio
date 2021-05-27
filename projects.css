@@ -1,100 +1,156 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
-body{
-    cursor: none;
+body {
+
+    /* background: linear-gradient(to right, #24243e, #302b63, #0f0c29);  */
+    overflow: hidden;
 }
-h1{
+.content {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    height: 100vh;
+    overflow-y: scroll;
+}
+h1.title  {
     color: #f26b22;
     font-size: 4rem;
     font-family: 'Acme', sans-serif;
     text-align: center;
 }
-.my-card{
-    width: 22%;
-    height: 420px;
-    perspective: 1000px;
+div.background {
+    position: relative;
+    margin-top: 80px;
+    height: 35vh;
+    width: 100%;
+    background: linear-gradient(to right, #b6fbff, #83a4d4); 
 }
-.my-card-inner{
+
+.heading {
+    position: absolute;
+    font-family: 'Mate SC', serif;
+    /* text-decoration: underline; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(3rem, 10vw, 6rem);
+    
+    /* margin-top: 100px; */
+}
+.flip-card h1 {
+    color: white;
+}
+
+.flip-card {
+    width: 100%;
+    text-align: center;
+    max-width: 320px;
+    height: 420px;
+    margin: auto;
+    border-radius: 0.5em;
+    perspective: 1000px;
+    /* box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !; */
+    /* box-shadow: rgba(255, 255, 0, 0.4) 5px 5px, rgba(255, 255, 0, 0.3) 10px 10px, rgba(255, 255, 0, 0.2) 15px 15px, rgba(255, 255, 0, 0.1) 20px 20px, rgba(255, 255, 0, 0.05) 25px 25px; */
+    /* box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; */
+}
+
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
-    border-radius: 1rem;
-    color: #fff;
-    text-align: center;
-    transition: transform 0.7s;
+    /* text-align: center; */
+    border-radius: 0.5rem;
+    transition: transform 0.6s;
     transform-style: preserve-3d;
-    /* box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.my-card:hover .my-card-inner{
+
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-    cursor: pointer;
 }
-.my-card-front, .my-card-back {
-    /* border: 2px solid red; */
-    border-radius: 1rem;
-    background-color: blue  ;
+
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border-radius: 0.5rem;
 }
-.my-card-back{
+
+.flip-card-front {
+    background-color: white;
+    color: black;
+}
+
+.flip-card-back {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem;
     transform: rotateY(180deg);
 }
-.my-card img{
-    max-width: 100%;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
+.front-body {
+    padding: 1rem;
 }
-.my-card-body{
-    padding: 20px;
+i {
+    font-size: 4rem;
+    padding-right: 0.5rem;
 }
-.my-card-body p{
-    font-size: 1rem;
-    opacity: 0.7;
+i.bxl-linkedin {
+    color: #2980b9;
 }
-div.my-card-body h3{
-    font-size: 1rem;
-    opacity: 0.7;
+i.bxl-behance {
+    color: black;
 }
-div.my-card-body h2{
-    padding: 10px;
+i.bxl-github {
+    color: black;
 }
-.my-card i{
-    font-size: 70px;
+i.bxl-envelope-fill {
+    color: crimson;
 }
-
-.icon-image{
-    height: 70px;
-    width: auto;
-    margin: 7px;
+.flip-card-front img {
+    width: 100%;
 }
 
-
-.yelp-camp{
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1855d6, 0 0 20px #1855d6, 0 0 25px #1855d6, 0 0 30px #1855d6, 0 0 35px #0073e6;
+.yelp-camp {
+    color: white;
+    background-color: #1855d6;
+    /* border-bottom: 0.5rem solid #1855d6; */
+}
+.color-switch {
+    color: white;
+    background-color: rgb(230, 93, 34);
+    /* border-bottom: 0.5rem solid #e65d22; */
+}
+.crypto-tracker {
+    color: white;
+    background-color: #50417a;
+    /* border-bottom: 0.5rem solid #50417a; */
+}
+.isustain {
+    color: white;
+    background-color: #2d612d;
+    /* border-bottom: 0.5rem solid #2d612d; */
+}
+img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.yelp-camp-light{
+    box-shadow: 0 0 5px #fff, 0 0 15px #1855d6, 0 0 20px #1855d6;
 }
 .colorswitch-light{
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e65d22, 0 0 20px #e65d22, 0 0 25px #e65d22, 0 0 30px #e65d22, 0 0 35px #0073e6;
+    box-shadow: 0 0 5px #fff, 0 0 15px #e65d22, 0 0 20px #e65d22;
+}
+.cryptotracker-light{
+    box-shadow: 0 0 5px #fff, 0 0 15px #50417a, 0 0 20px #50417a;
 }
 .isustain-light{
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #2d612d, 0 0 20px #2d612d, 0 0 25px #2d612d, 0 0 30px #2d612d, 0 0 35px #0073e6;
+    box-shadow: 0 0 5px #fff, 0 0 15px #2d612d, 0 0 20px #2d612d;
 }
-.extra-light{
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #50417a, 0 0 20px #50417a, 0 0 25px #50417a, 0 0 30px #50417a, 0 0 35px #0073e6;
-}
-
-
-@media only screen and (max-width: 768px) {
-    .my-card {
-      width: 90%;
-      margin-bottom: 30px;
-    }
-}
-
-
-

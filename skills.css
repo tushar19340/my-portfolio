@@ -1,5 +1,12 @@
 body{
     cursor: none;
+    overflow: hidden;
+}
+.content {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    height: 100vh;
+    overflow-y: scroll;
 }
 .icon-image{
     height: 100px;
@@ -11,7 +18,6 @@ body{
 .icon-image:hover{
     height: 140px;
     transform: rotate(20deg);
-    
 }
 
 h1{
@@ -23,7 +29,7 @@ h1{
 
 @media (max-width: 700px){
     .icon-image{
-        height: 40px;
+        height: 70px;
         width: auto;
         margin: 5px;
     }

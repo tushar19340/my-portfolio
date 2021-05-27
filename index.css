@@ -5,15 +5,28 @@
 
 body{
     cursor: none;
+    overflow: hidden;
 }
-
-.container img{
-    height: 400px;
-    width: auto;
+.content {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.container {
+    margin-top: 5rem;
+}
+.bio {
+    flex: 1;
+}
+.profile-image {
+    flex: 1;
+    border-radius: 3px;
+    margin-bottom: 3rem;
+}
+.profile-image img {
     display: block;
     margin: auto;
-
-    border-radius: 3px;
 }
 
 .container h3{
@@ -34,12 +47,18 @@ body{
     
 }
 i{
-    font-size: 70px;
+    font-size: 50px;
     color: white;
     margin-right: 20px;
     transition: linear 4.5s;
 }
-i:hover{
-    transform: rotateY(1800deg);
-    color: rgb(255,255 ,0);
+
+@media (max-width: 700px){
+    .bio {
+        text-align: center;
+    }
+    .contact {
+        margin: auto;
+    }
+
 }
