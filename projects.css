@@ -124,12 +124,17 @@ i.bxl-envelope-fill {
 }
 .color-switch {
     color: white;
-    background-color: rgb(230, 93, 34);
+    background-color: rgb(15, 14, 14);
     /* border-bottom: 0.5rem solid #e65d22; */
 }
 .crypto-tracker {
     color: white;
     background-color: #50417a;
+    /* border-bottom: 0.5rem solid #50417a; */
+}
+.snosicle {
+    color: white;
+    background-color: orange;
     /* border-bottom: 0.5rem solid #50417a; */
 }
 .isustain {
@@ -146,6 +151,9 @@ img {
 }
 .colorswitch-light{
     box-shadow: 0 0 5px #fff, 0 0 15px #e65d22, 0 0 20px #e65d22;
+}
+.snosicle-light{
+    box-shadow: 0 0 5px #fff, 0 0 15px orange, 0 0 20px orange;
 }
 .cryptotracker-light{
     box-shadow: 0 0 5px #fff, 0 0 15px #50417a, 0 0 20px #50417a;
